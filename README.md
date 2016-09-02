@@ -89,8 +89,9 @@ public class PermissionActivity extends AppCompatActivity implements
     
 </pre>
 
+In <b>AndroidManifest.xml</b><br>
 
-
+Specify all the needed permissions. If you don't, permission requests fail silently. That's an Android thing.
 
 For more information, check out my detailed guide here : http://droidmentor.com/multiple-permissions-in-one-go
 
