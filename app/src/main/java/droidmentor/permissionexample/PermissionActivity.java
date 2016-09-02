@@ -23,12 +23,13 @@ public class PermissionActivity extends AppCompatActivity implements
 
     PermissionUtils permissionUtils;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_permission);
 
-        permissionUtils=new PermissionUtils(this);
+        permissionUtils=new PermissionUtils(getApplicationContext());
 
         permissions.add(Manifest.permission.ACCESS_FINE_LOCATION);
         permissions.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
